@@ -7,7 +7,7 @@
 
 |               |               |               |               |
 |---------------|---------------|---------------|---------------|
-| ![Member 1](https://github.com/Pearl-K.png?size=100) | ![Member 2](https://github.com/member2.png?size=100) | ![Member 3](https://github.com/member3.png?size=100) | ![Member 4](https://github.com/member4.png?size=100) |
+| ![Member 1](https://github.com/Pearl-K.png?size=100) | ![Member 2](https://github.com/MinchaeKwon.png?size=100) | ![Member 3](https://github.com/SeokguKim.png?size=100) | ![Member 4](https://github.com/member4.png?size=100) |
 | [강진주](https://github.com/Pearl-K) | [권민채](https://github.com/MinchaeKwon) | [이승록](https://github.com/SeokguKim) | [나영조](https://github.com/) |
 
 
