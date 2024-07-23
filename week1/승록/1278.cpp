@@ -23,7 +23,7 @@ void solve(int mask) {
 int main() {
     cin >> N;
     // solve로 전체 상태를 순회하며 얻은 방문 순서를 출력
-    vis[0] = 1력
+    vis[0] = 1;
     solve(0);
     cout << ans.size() << "\n";
     for (int i : ans) cout << i + 1 << "\n";

@@ -13,7 +13,7 @@ void solve(string S) {
     vector<string> v;
     for (int i = 0; i < S.length(); i++) {
        v.push_back(S.substr(0, i) + S.substr(i + 1));
-    렬
+    }
     sort(v.begin(), v.end());
     // 사전순 맨 위의 것으로 재귀 호출 후 끝나면 현재 상태를 출력
     solve(v[0]);
