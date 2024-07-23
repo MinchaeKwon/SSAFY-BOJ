@@ -10,6 +10,12 @@
 
 
 [2705. 팰린드롬 파티션](https://www.acmicpc.net/problem/2705)
+
+
 [16719. ZOAC](https://www.acmicpc.net/problem/16719)
+
+
 [20164. 홀수 홀릭 호석](https://www.acmicpc.net/problem/20164)
+
+
 [1278. 연극](https://www.acmicpc.net/problem/1278)
