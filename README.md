@@ -4,6 +4,14 @@
 
 ## Members
 
+| 이름 (Github Link) | 소속 |
+|------------------|------|
+| [강진주](https://github.com/Pearl-K) | 전공 Java반 |
+| [권민채](https://github.com/MinchaeKwon) | 전공 Java반 |
+| [나영조](https://github.com/cheolsu) | 전공 임베디드반 |
+| [이승록](https://github.com/jimin) | 전공 임베디드반 |
+
+
 
 
 ## Week 1 : 재귀 ✅
