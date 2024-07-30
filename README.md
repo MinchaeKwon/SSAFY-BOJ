@@ -15,8 +15,6 @@
 
 
 ## Week 1 : 재귀 ✅
-
-
 [2705. 팰린드롬 파티션](https://www.acmicpc.net/problem/2705)
 - N을 기준으로 홀/짝 경우를 나눠서 생각하기
 - 문제를 부분 문제로 분할하다보면 이전의 값을 쓸 수 있다는 사실을 발견할 수 있다.
@@ -39,3 +37,13 @@
 
 
 ## Week 2 : 백트래킹 ✅
+[1342. 행운의 문자열](https://www.acmicpc.net/problem/1342)
+
+
+[10597. 순열장난](https://www.acmicpc.net/problem/10597)
+
+
+[17255. N으로 만들기](https://www.acmicpc.net/problem/17255)
+
+
+[1443. 망가진 계산기](https://www.acmicpc.net/problem/1443)
