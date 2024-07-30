@@ -1,6 +1,6 @@
 # SSAFY 12기 알고리즘 스터디
 #### 삼성 역량테스트 B형 취득, 코테 대비를 목적으로 진행합니다.
-#### [회의록](https://docs.google.com/document/d/1EjaM0CXsTt4PHvZbOxp-2EXrSIyDbMyl6VO1BHClmkc/edit?usp=sharing)
+#### [회의록📋](https://docs.google.com/document/d/1EjaM0CXsTt4PHvZbOxp-2EXrSIyDbMyl6VO1BHClmkc/edit?usp=sharing)
 
 ## Rules
 - 매 주 정해진 알고리즘 주제 하에 문제를 추천합니다.
