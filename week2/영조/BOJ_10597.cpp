@@ -1,44 +1,55 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
-string str, temp_str="", temp_str_2="";
-int visitied[11]={0,};
-int DAT[26]={0,};
+vector<pair<int,int>> v;
+string str;
+int N, DAT[100]={0,}, cnt=0;
+bool RET=false;
 
-int query(string _str,int sz){
-    int sum=0;
-    if (_str.size()>=sz) {
-        // cout << temp_str_2 << "\n";
-        return 1;
-    }
-    for (int i=0;i<str.size();i++){
-        if (!visitied[i]&&(*(_str.end()-1)!=str[i])){
-            _str+=str[i];
-            visitied[i]=1;
-            // temp_str_2+='0'+i;
-            sum+=query(_str,sz);
-            _str=_str.substr(0,_str.size()-1);
-            visitied[i]=0;
-            // temp_str_2=temp_str_2.substr(0,temp_str_2.size()-1);
+bool isVisitied(int start,int sz){
+    for (int i=start;i<start+sz;i++){
+        if (DAT[i]){
+            return true;
         }
     }
-    return sum;
+    return false;
 }
 
-int fact(int num){
-    if (num==1) return 1;
-    else return num*fact(num-1);
+void fillDAT(int start, int sz, int num){
+    for (int i=start;i<start+sz;i++) DAT[i]=num;
 }
 
-int main(){
-    
-    cin >> str;
-    int divide=1;
-    for (char i:str) DAT[i-'a']++;
-    for (int i=0;i<26;i++){
-        if (DAT[i]) divide*=fact(DAT[i]);
+void query(string n){
+    //cout << stoi(n) << "\n";
+    if (RET==true) return;
+    if (stoi(n)==1){
+        RET=true;
+        sort(v.begin(),v.end());
+        for (auto i:v){
+            cout << str.substr(i.first,i.second) << " ";
+        }
+        return;
     }
-    cout << query(temp_str,str.size())/divide;
+    n=to_string(stoi(n)-1);
+    for (int i=0;i<=str.size()-n.size();i++){
+        if (str.substr(i,n.size())==n&&!isVisitied(i,n.size())){
+            v.push_back({i,n.size()});
+            fillDAT(i,n.size(),1);
+            query(to_string(stoi(n)));
+            fillDAT(i,n.size(),0);
+            v.pop_back();
+        }
+    }
+}
+
+int main()
+{
+    cin >> str;
+    if (str.size()<10) N=str.size();
+    else N=9+(str.size()-9)/2;
+    query(to_string(N+1));
 }
