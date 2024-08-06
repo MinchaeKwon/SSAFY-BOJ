@@ -68,12 +68,31 @@
 
 ## Week 3 : DP ✅
 [2502. 떡 먹는 호랑이](https://www.acmicpc.net/problem/2502)
+ - 바텀업 dp나 피보나치 수열의 점화식을 통해서 cnt를 셀 수 있다.
+ - 가능한 경우 중 하나만 찾으면 되므로 for문과 간단한 수식을 통해 경우를 구할 수 있다.
 
 
 [17265. 나의 인생에는 수학과 함께](https://www.acmicpc.net/problem/17265)
+ - grid의 범위 제한이 작고 숫자와 연산자의 위치가 규칙성이 있다.
+ - 우하향 방향으로만 가는 dfs를 통해 max와 min을 갱신해주면 된다.
 
 
 [12784. 인하니카 공화국](https://www.acmicpc.net/problem/12784)
-
+ - tree dp 문제, 리프노드 가중치의 합과 부모노드 가중치 중에 min을 갱신한다.
+ - 리프노드를 체크해주는 조건과 엣지케이스를 처리하는게 중요하다.
 
 [2629. 양팔저울](https://www.acmicpc.net/problem/2629)
+- 2차원 냅색 문제, 1차원 dp 테이블로 풀고 싶다면 상태를 비트마스킹으로 표현할 수 있다.
+
+
+## Week 4 : 누적 합 ✅
+[21758. 꿀 따기](https://www.acmicpc.net/problem/21758)
+
+
+[25682. 체스판 다시 칠하기](https://www.acmicpc.net/problem/25682)
+
+
+[2632. 피자판매](https://www.acmicpc.net/problem/2632)
+
+
+[5875. 오타](https://www.acmicpc.net/problem/5875)
