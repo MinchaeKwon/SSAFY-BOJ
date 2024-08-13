@@ -14,8 +14,14 @@ int main()
         if (i=='(') left_cnt++;
         if (i==')') right_cnt++;
     }
+    if (str.size()==1){
+        cout << 0;
+        exit(0);
+    }
     if (left_cnt>right_cnt){
         reverse(str.begin(),str.end());
+        for (char i:str) cout << i;
+        cout << "\n";
         for (int i=0;i<str.size();i++){
             if (str[i]==')'){
                 psum[i+1]=psum[i]+1;
@@ -30,7 +36,7 @@ int main()
             }
         }
     }
-    if (right_cnt<left_cnt){
+    if (right_cnt>left_cnt){
         for (int i=0;i<str.size();i++){
             if (str[i]=='('){
                 psum[i+1]=psum[i]+1;
