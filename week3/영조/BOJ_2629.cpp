@@ -27,12 +27,12 @@ int main()
     DP[0].push_back(0);
     for (int i=0;i<choo_v.size();i++){
         int val=choo_v[i];
-        vector<int> temp_v;
+        set<int> temp_st;
         for (int j=1;j<=15000;j++){
-            if (j>=val&&DP[j-val].size()) temp_v.push_back(j);
+            if (j>=val&&DP[j-val].size()) temp_st.insert(j);
         }
-        for (int j:temp_v){
-            for (int k:DP[j-val]){
+        for (auto j:temp_st){
+            for (int &k:DP[j-val]){
                 int temp=k|=(1<<i);
                 DP[j].push_back(temp);
             }
@@ -42,8 +42,8 @@ int main()
         int flag=0;
         for (int j=0;j<=15000;j++){
             if (DP[j].size()&&DP[i+j].size()){
-                for (int k:DP[j]){
-                    for (int l:DP[i+j]){
+                for (int &k:DP[j]){
+                    for (int &l:DP[i+j]){
                         if (!(k&l)) {
                             cout << "Y ";
                             flag=1;
