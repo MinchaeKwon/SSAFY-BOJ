@@ -100,14 +100,17 @@
 
 
 ## Week 5 : Greedy ✅
-[12904. A와 B](https://www.acmicpc.net/problem/12904)
- - 
+ [12904. A와 B](https://www.acmicpc.net/problem/12904)
 
-[1461. 도서관](https://www.acmicpc.net/problem/1461)
- - 
 
-[1826. 연료 채우기](https://www.acmicpc.net/problem/1826)
- - 
+ [1461. 도서관](https://www.acmicpc.net/problem/1461)
+
+
+
+ [1826. 연료 채우기](https://www.acmicpc.net/problem/1826)
+
+
  
-[4716. 풍선](https://www.acmicpc.net/problem/4716)
- - 
+ [4716. 풍선](https://www.acmicpc.net/problem/4716)
+
+
