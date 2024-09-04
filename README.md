@@ -117,3 +117,40 @@
   - 정렬 기준에 단순한 변수가 아니라 계산식이 들어갈 수도 있음을 생각하기
 
 
+## Week 6 : 분할 정복 ✅
+ [1780. 종이의 개수](https://www.acmicpc.net/problem/1780)
+  - 분할 정복 기본 문제, 3등분으로 분할한 후에 정복(조건 확인)하기
+
+ [1461. Moo게임](https://www.acmicpc.net/problem/5904)
+  - M과 O만 나오는 것을 이용하여 늘어나는 문자열 길이를 분할하여 M or O 인지 판단하기
+
+
+ [1826. 트리 복구](https://www.acmicpc.net/problem/6597)
+  - 트리 순회의 InOrder와 PreOrder의 특성을 알면 쉽게 풀 수 있다.
+  - PreOrder를 통해 루트를 먼저 찾은 후, InOrder 순서에서 루트를 중심으로 Left, Right를 분할하기
+
+ 
+ [1588. 수열](https://www.acmicpc.net/problem/1588)
+ - solve(n, k) = n 번째 수열에서 k 까지의 각각의 합과 현재 문자를 반환
+ - solve(n, k)는 solve(n - 1, (k - 1) / 3 + 1) 의 값으로부터 분할 정복하여 구할 수 있다.
+
+
+
+## Week 7 : 이분 탐색 ✅
+ [3151. 합이 0](https://www.acmicpc.net/problem/3151)
+  - 투 포인터 or 이중 for문을 통해 두 자리를 정해주고, 총 합이 0이 되는 남은 한 자리를 이분 탐색으로 찾기
+
+
+ [17951. 흩날리는 시험지 속에서 내 평점이 느껴진거야](https://www.acmicpc.net/problem/17951)
+  - 그룹의 수를 mid 값으로 놓고 매개 변수 탐색을 하는 아이디어를 떠올리는 것이 핵심이다.
+
+
+ [3745. 오름세](https://www.acmicpc.net/problem/3745)
+ - 오름세라는 이름에 맞게 LIS(가장 긴 부분 증가 수열)을 이분 탐색으로 구하는 문제이다.
+
+
+ [2352. 반도체 설계](https://www.acmicpc.net/problem/2352)
+ - 반도체 연결 원리를 관찰하면 이분 탐색을 이용한 LIS를 구하는 문제로 해석할 수 있다.
+
+  
+
